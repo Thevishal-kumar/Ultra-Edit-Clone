@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar using Flex Box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        @media only screen and (max-width:972px){
+            body{
+                background-color: blue;
+            }
+            .item{
+                flex-direction: column;
+            }
+        }
+
+        .nav {
+            border: 1px solid white;
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+
+            padding-top: 22px;
+
+
+        }
+
+        img {
+            display: inline-block;
+            display: flex;
+        }
+
+
+
+
+
+        .box1 {
+            padding: 9px;
+            margin: 7px;
+        }
+
+        .box1:hover {
+
+            color: rgb(18, 103, 250);
+        }
+
+        .box2 {
+            padding: 9px;
+            margin: 7px;
+
+        }
+
+        .box2:hover {
+            color: rgb(18, 103, 250);
+        }
+
+        .box3 {
+            padding: 9px;
+            margin: 7px;
+
+        }
+
+        .box3:hover {
+            color: rgb(18, 103, 250);
+        }
+
+        .box4 {
+            padding: 9px;
+            margin: 7px;
+            border: none;
+
+        }
+
+        .box4:hover {
+            color: rgb(18, 103, 250);
+        }
+
+        img {
+            padding-left: 80px;
+            margin-top: 1px;
+            padding-top: 1px;
+            cursor: pointer;
+
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: row;
+            padding-left: 36vw;
+            padding-top: 3px;
+            cursor: pointer;
+
+        }
+
+        .container {
+
+
+           
+            width: 75vw;
+            height: 127vh;
+            display: flex;
+            display: grid;
+            grid-template-columns: 80px 80px 80px;
+            margin-top: 150px;
+            margin-left: 150px;
+            justify-content: space-evenly;
+            gap: 20px;
+            column-gap: 132px;
+
+
+
+
+        }
+
+        .item {
+            display: flex;
+            display: grid;
+            border: 1px solid rgb(253, 251, 251);
+            background-color: rgb(251, 248, 248);
+            width: 290px;
+            height: 160px;
+            margin-left: -1px;
+            margin-top: 2px;
+            justify-self: center;
+            justify-items: center;
+
+        }
+
+        h5 {
+            text-align: left;
+            margin-bottom: 80px;
+
+        }
+
+
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            border: 2px solid rgb(250, 250, 250);
+            width: 120px;
+            height: 28px;
+            transform: translateY(-30px);
+            padding: 2px;
+            margin: 4px;
+            border-radius: 7px;
+            text-align: center;
+            align-items: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-size: 75%;
+            font-weight: bold;
+            line-height: 30px;
+        }
+
+
+
+        ul :nth-child(1) {
+            background-color: rgb(22, 148, 232);
+
+        }
+
+        ul :nth-child(2) {
+            background-color: rgb(20, 220, 87);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="nav">
+            <img width="179" height="58" src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp">
+            <div class="boxes">
+                <span class="box1">Products
+                    <select name="products">
+                        <option value="products"></option>
+                    </select>
+
+                </span>
+                <span class="box2"> Pricing <select name="products">
+                        <option value="products"></option>
+                    </select></span>
+                <span class="box3"> Resources <select name="products">
+                        <option value="products"></option>
+                    </select></span>
+                <span class="box4"> About us <select name="products">
+                        <option value="products"></option>
+                    </select></span>
+
+                </span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="item item1">
+                <h1>English</h1>
+                <h5></h5>
+                <ul>
+                    <li>Download 32-bit</li>
+                    <li>Download 64-bit</li>
+                </ul>
+
+
+
+
+
+            </div>
+            <div class="item item2">
+                <h2>Deutsch<h2>
+                        <h5>German</h5>
+
+                        <ul>
+                            <li>Download 32-bit</li>
+                            <li>Download 64-bit</li>
+                        </ul>
+            </div>
+            <div class="item item3">
+                <h2>Italiano</h1>
+                    <h5>Italian</h5>
+                    <ul>
+                        <li>Download 32-bit</li>
+                        <li>Download 64-bit</li>
+                    </ul>
+            </div>
+            <div class="item item4">
+                <h2>Español</h2>
+                <h5>Spanish</h5>
+                <ul>
+                    <li>Download 32-bit</li>
+                    <li>Download 64-bit</li>
+                </ul>
+            </div>
+            <div class="item item5">
+                <h2>français</h2>
+                <h5>French</h5>
+                <ul>
+                    <li>Download 32-bit</li>
+                    <li>Download 64-bit</li>
+                </ul>
+            </div>
+            <div class="item item6">
+                <h2>Português brasileiro</h2>
+                <h5>Brazilian Portuguese</h5>
+                <ul>
+                    <li>Download 32-bit</li>
+                    <li>Download 64-bit</li>
+                </ul>
+            </div>
+            <div class="item item7">
+                <h2>日本</h2>
+                <h5>Japanese</h5>
+                <ul>
+                    <li>Download 32-bit</li>
+                    <li>Download 64-bit</li>
+                </ul>
+            </div>
+            <div class="item item8">
+                <h2>한국어</h2>
+                <h5>Korean</h5>
+                <ul>
+                    <li>Download 32-bit</li>
+                    <li>Download 64-bit</li>
+                </ul>
+            </div>
+            <div class="item item9">
+                <h2>中国</h2>
+                <h5>Chinese</h5>
+                <ul>
+                    <li>Download 32-bit</li>
+                    <li>Download 64-bit</li>
+                </ul>
+            </div>
+            <div class="item item10">
+                <h2>中國</h2>
+                <h5>Traditional Chines5</h5>
+                <ul>
+                    <li>Download 32-bit</li>
+                    <li>Download 64-bit</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+</body>
+
+</html>
